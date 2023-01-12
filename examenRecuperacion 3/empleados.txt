@@ -1,0 +1,6 @@
+1;11111111A;Ana Díaz;Almacen
+2;22222222A;Luisa Amor;Contabilidad
+1;11111111A;Ana Díaz;Ventas
+3;33333333A;Margarita Flores;RRHH
+4;44444444A;Mónica Vaz;Almacen
+1;11111111A;Ana Díaz;Contabilidad

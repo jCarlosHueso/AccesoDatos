@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<radar>
+	<via>A6</via>
+	<km>67</km>
+	<maximo>120</maximo>
+	<multas>
+		<multa matricula="4444DDD">
+			<hora>11:03</hora>
+			<velocidad>138</velocidad>
+		</multa>
+		<multa matricula="2222BBB">
+			<hora>16:30</hora>
+			<velocidad>160</velocidad>
+		</multa>
+		<multa matricula="5555FFF">
+			<hora>12:01</hora>
+			<velocidad>145</velocidad>
+		</multa>
+	</multas>
+</radar>
+

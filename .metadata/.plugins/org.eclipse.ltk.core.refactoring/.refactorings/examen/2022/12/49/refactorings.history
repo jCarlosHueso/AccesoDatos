@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MiObjectOutputStream.java&apos; to &apos;examenRecuperacion 3/src/examen&apos;&#x0D;&#x0A;- Original project: &apos;examen&apos;&#x0D;&#x0A;- Destination element: &apos;examenRecuperacion 3/src/examen&apos;&#x0D;&#x0A;- Original element: &apos;ejercicio1.MiObjectOutputStream.java&apos;" description="Copy compilation unit" destination="=examenRecuperacion 3/src=/optional=/true=/=/maven.pomderived=/true=/&lt;examen" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;ejercicio1{MiObjectOutputStream.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1670412455048" units="1" version="1.0"/>
+</session>

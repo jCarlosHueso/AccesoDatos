@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="examen19_12"/>
+			<item value="examenRecuperacion3"/>
+			<item value="examenT2"/>
+			<item value="examenRecu"/>
+			<item value="examenRepaso2"/>
+			<item value="examen"/>
+			<item value="Examen4-11-22"/>
+			<item value="unidad2"/>
+			<item value="Examen1"/>
+			<item value="Unidad1"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="examen19_12"/>
+			<item value="examenRecuperacion3"/>
+			<item value="examenT2"/>
+			<item value="examenRecu"/>
+			<item value="examenRepaso2"/>
+			<item value="examen"/>
+			<item value="unidad2"/>
+			<item value="Examen1"/>
+			<item value="Unidad1"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>
