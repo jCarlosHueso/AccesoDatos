@@ -1,0 +1,15 @@
+package com.practica.veterinaria;
+
+public class Principal 
+{
+	public static void main(String[] args)
+	{
+		boolean salir = false;
+		
+		do
+		{
+			System.out.println();
+		} 
+		while (!salir);
+	}
+}

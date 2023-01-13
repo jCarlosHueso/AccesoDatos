@@ -1,0 +1,41 @@
+package com.practica.veterinaria;
+
+import java.util.Scanner;
+
+public class Principal 
+{
+	public static void main(String[] args)
+	{
+		boolean salir = false;
+		
+		do
+		{
+			System.out.println("-- Menú --");
+			System.out.println("1 - Crear cliente");
+			System.out.println("1 - Crear cliente");
+			System.out.println("1 - Crear cliente");
+			System.out.println("1 - Crear cliente");
+			System.out.println("1 - Crear cliente");
+			System.out.print("Opción: ");
+			
+			switch (new Scanner(System.in).nextInt()) 
+			{
+				case 0: 
+					salir = true;
+					System.out.println("\nSaliendo del programa.");
+					break;
+				case 1:
+					crearCliente();
+					
+				default:
+					System.out.println("Introduce una opción del menú.");;
+			}
+		} 
+		while (!salir);
+	}
+
+	private static void crearCliente() 
+	{
+		System.out.print("\nIntroduce email: ");
+	}
+}
