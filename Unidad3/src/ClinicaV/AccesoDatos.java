@@ -17,7 +17,7 @@ import com.mongodb.client.MongoDatabase;
 public class AccesoDatos {
 	private MongoClient cluster = null;
 	private MongoDatabase bd = null;
-	private String cadenaCNX = "mongodb+srv://root:root@accesodatos.c38r0xl.mongodb.net/?retryWrites=true&w=majority";
+	private String cadenaCNX = "mongodb+srv://root:root@accesodatos.lxwgnek.mongodb.net/?retryWrites=true&w=majority";
 	
 	public AccesoDatos() {
 		try {
