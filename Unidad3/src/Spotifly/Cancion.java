@@ -2,7 +2,7 @@ package Spotifly;
 
 public class Cancion {
 	private String titulo;
-	private float valoracion;
+	private double valoracion;
 	
 	
 	public void mostrar() {
@@ -15,7 +15,7 @@ public class Cancion {
 	}
 
 
-	public Cancion(String titulo, float valoracion) {
+	public Cancion(String titulo, double valoracion) {
 		this.titulo = titulo;
 		this.valoracion = valoracion;
 	}
@@ -31,12 +31,12 @@ public class Cancion {
 	}
 
 
-	public float getValoracion() {
+	public double getValoracion() {
 		return valoracion;
 	}
 
 
-	public void setValoracion(float valoracion) {
+	public void setValoracion(double valoracion) {
 		this.valoracion = valoracion;
 	}
 	
