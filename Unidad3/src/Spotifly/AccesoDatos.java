@@ -33,27 +33,13 @@ import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.InsertOneResult;
 import com.mongodb.client.result.UpdateResult;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 import ClinicaV.Cliente;
 
-=======
->>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
-=======
->>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 
 public class AccesoDatos {
 	private MongoClient cluster = null;
 	private MongoDatabase bd = null;
-<<<<<<< HEAD
-<<<<<<< HEAD
 	private String cadenaCNX = "mongodb+srv://root:root@accesodatos.c38r0xl.mongodb.net/?retryWrites=true&w=majority";
-=======
-	private String cadenaCNX = "mongodb+srv://root:root@accesodatos.lxwgnek.mongodb.net/?retryWrites=true&w=majority";
->>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
-=======
-	private String cadenaCNX = "mongodb+srv://root:root@accesodatos.lxwgnek.mongodb.net/?retryWrites=true&w=majority";
->>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 	public AccesoDatos() {
 		try {
 			//Conectar con el cluster AccesoDatos de MongoAtlas
@@ -583,8 +569,6 @@ public class AccesoDatos {
 			e.printStackTrace();
 		}
 	}
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 	public Cliente obtenerCliente(String email) {
 		// TODO Auto-generated method stub
@@ -596,8 +580,4 @@ public class AccesoDatos {
 		}
 		return resultado;
 	}
-=======
->>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
-=======
->>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 }

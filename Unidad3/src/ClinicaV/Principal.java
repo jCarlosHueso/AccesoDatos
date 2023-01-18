@@ -1,30 +1,19 @@
 package ClinicaV;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-<<<<<<< HEAD
 
 public class Principal {
 	static Scanner t = new Scanner(System.in);
 	static AccesoDatos ad = new AccesoDatos();
-=======
-import Spotifly.AccesoDatos;
-
-public class Principal {
-	static Scanner t = new Scanner(System.in);
-	static AccesoDatos sf = new AccesoDatos();
->>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 	// Definimos el formato con el que vamos
 	// a pintar/pedir fechas
 	static SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-<<<<<<< HEAD
 		if (ad.getBd() != null) {
-=======
-		if (sf.getBd() != null) {
->>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 			int opcion;
 			do {
 				System.out.println("Introduce opción:");
@@ -41,22 +30,53 @@ public class Principal {
 				case 1:
 					crearCliente();
 					break;
-				
+				case 2:
+					crearMascota();
+					break;
 				}
 			} while (opcion != 0);
 			//Cerrar conexión
-<<<<<<< HEAD
 			ad.cerrar();
-=======
-			sf.cerrar();
->>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 		} else {
-			System.out.println("Error, no hay conexión con SpotiFly");
+			System.out.println("Error, no hay conexión con Clínica");
+		}
+	}
+	private static void crearMascota() {
+		// TODO Auto-generated method stub
+		mostrarClientes();
+		System.out.println("Código de cliente:");
+		int codigo = t.nextInt();t.nextLine();
+		Cliente c = ad.obtenerCliente(codigo);
+		if(c != null) {
+			Mascota m = new Mascota();
+			m.setCliente(codigo);
+			System.out.println("Nombre mascota:");
+			m.setNombre(t.nextLine());
+			System.out.println("Tipo:");
+			m.setTipo(t.nextLine());
+			m.setCodigo(ad.obtenerCodigo("mascotas"));
+			if(ad.crearMascota(m)) {
+				System.out.println("Mascota añadida con código "+m.getCodigo());
+			}
+			else {
+				System.out.println("Error al añadir la mascota");
+			}
+			
+		}
+		else {
+			System.out.println("Cliente no existe");
+		}
+		
+	}
+	private static void mostrarClientes() {
+		// TODO Auto-generated method stub
+		ArrayList<Cliente> clientes = ad.obtenerClientes();
+		for(Cliente c: clientes) {
+			c.mostrar();
 		}
 	}
 	private static void crearCliente() {
 		// TODO Auto-generated method stub
-<<<<<<< HEAD
 		System.out.println("Email:");
 		String email = t.nextLine();				
 		Cliente c = ad.obtenerCliente(email);
@@ -65,7 +85,7 @@ public class Principal {
 			c.setEmail(email);
 			System.out.println("Nombre");
 			c.setNombre(t.nextLine());
-			c.setCodigo(ad.obtenerCodigoCliente());
+			c.setCodigo(ad.obtenerCodigo("clientes"));
 			if(ad.crearCliente(c)) {
 				System.out.println("Cliente creado con código:"+c.getCodigo());
 			}
@@ -76,9 +96,6 @@ public class Principal {
 		else {
 			System.out.println("Error, el cliente ya existe");
 		}
-=======
-		Cliente c =new Cliente();
->>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 		
 	}
 }
