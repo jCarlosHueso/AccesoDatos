@@ -3,16 +3,28 @@ package ClinicaV;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
+<<<<<<< HEAD
 
 public class Principal {
 	static Scanner t = new Scanner(System.in);
 	static AccesoDatos ad = new AccesoDatos();
+=======
+import Spotifly.AccesoDatos;
+
+public class Principal {
+	static Scanner t = new Scanner(System.in);
+	static AccesoDatos sf = new AccesoDatos();
+>>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 	// Definimos el formato con el que vamos
 	// a pintar/pedir fechas
 	static SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+<<<<<<< HEAD
 		if (ad.getBd() != null) {
+=======
+		if (sf.getBd() != null) {
+>>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 			int opcion;
 			do {
 				System.out.println("Introduce opción:");
@@ -33,13 +45,18 @@ public class Principal {
 				}
 			} while (opcion != 0);
 			//Cerrar conexión
+<<<<<<< HEAD
 			ad.cerrar();
+=======
+			sf.cerrar();
+>>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 		} else {
 			System.out.println("Error, no hay conexión con SpotiFly");
 		}
 	}
 	private static void crearCliente() {
 		// TODO Auto-generated method stub
+<<<<<<< HEAD
 		System.out.println("Email:");
 		String email = t.nextLine();				
 		Cliente c = ad.obtenerCliente(email);
@@ -59,6 +76,9 @@ public class Principal {
 		else {
 			System.out.println("Error, el cliente ya existe");
 		}
+=======
+		Cliente c =new Cliente();
+>>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 		
 	}
 }

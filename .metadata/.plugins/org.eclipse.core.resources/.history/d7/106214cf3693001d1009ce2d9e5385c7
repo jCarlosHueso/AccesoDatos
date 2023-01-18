@@ -1,0 +1,19 @@
+package com.practica.veterinaria;
+
+import java.util.ArrayList;
+
+public class Cliente
+{
+	private int codigo, codigoPostal;
+	private String nombre, direccion;
+	
+	public Cliente() {}
+
+	public Cliente(int codigo, int codigoPostal, String nombre, String direccion) 
+	{
+		this.codigo = codigo;
+		this.codigoPostal = codigoPostal;
+		this.nombre = nombre;
+		this.direccion = direccion;
+	}
+}

@@ -5,6 +5,7 @@ import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Arrays;
 
 import org.bson.Document;
@@ -17,11 +18,17 @@ import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
 >>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
+=======
+import org.bson.codecs.configuration.CodecProvider;
+import org.bson.codecs.configuration.CodecRegistry;
+import org.bson.codecs.pojo.PojoCodecProvider;
+>>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoException;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
+<<<<<<< HEAD
 <<<<<<< HEAD
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
@@ -33,12 +40,19 @@ import com.mongodb.client.result.InsertOneResult;
 =======
 import com.mongodb.client.MongoDatabase;
 >>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
+=======
+import com.mongodb.client.MongoDatabase;
+>>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 
 public class AccesoDatos {
 	private MongoClient cluster = null;
 	private MongoDatabase bd = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private String cadenaCNX = "mongodb://localhost:27017";
+=======
+	private String cadenaCNX = "mongodb+srv://root:root@accesodatos.lxwgnek.mongodb.net/?retryWrites=true&w=majority";
+>>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 =======
 	private String cadenaCNX = "mongodb+srv://root:root@accesodatos.lxwgnek.mongodb.net/?retryWrites=true&w=majority";
 >>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
@@ -47,7 +61,12 @@ public class AccesoDatos {
 		try {
 			//Conectar con el cluster AccesoDatos de MongoAtlas
 <<<<<<< HEAD
+<<<<<<< HEAD
 			cluster = MongoClients.create(cadenaCNX);
+=======
+			cluster = MongoClients.create(
+					new ConnectionString(cadenaCNX));
+>>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 =======
 			cluster = MongoClients.create(
 					new ConnectionString(cadenaCNX));
@@ -85,6 +104,7 @@ public class AccesoDatos {
 			System.out.println(e.getMessage());
 		}
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 	public Cliente obtenerCliente(String email) {
 		// TODO Auto-generated method stub
@@ -141,6 +161,8 @@ public class AccesoDatos {
 		}
 		return resultado;
 	}
+=======
+>>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 =======
 >>>>>>> 80c88f51dc096720268b555a9f5208a96aadde1d
 }
