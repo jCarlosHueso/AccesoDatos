@@ -1,0 +1,6 @@
+package com.practica.veterinaria;
+
+public class Clinica
+{
+
+}

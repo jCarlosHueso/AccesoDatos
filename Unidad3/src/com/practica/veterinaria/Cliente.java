@@ -1,0 +1,28 @@
+package com.practica.veterinaria;
+
+import java.util.ArrayList;
+
+public class Cliente
+{
+	private int codigo;
+	private String nombre, email;
+	
+	public Cliente() {}
+
+	public Cliente(int codigo, int codigoPostal, String nombre, String email) 
+	{
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.email = email;
+	}
+
+	@Override
+	public String toString()
+	{
+		return "Cliente [codigo=" + codigo +
+				", nombre=" + nombre + 
+				", email=" + email + "]";
+	}
+	
+	
+}

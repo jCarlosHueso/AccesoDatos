@@ -1,0 +1,3 @@
+Alejandro Sanz;Pop;1640991600000;1995;true
+a1;pop;1041375600000;2001;false
+a2;rock;1622498400000;2021;true
