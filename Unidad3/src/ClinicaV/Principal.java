@@ -12,7 +12,7 @@ public class Principal {
 	// a pintar/pedir fechas
 	static SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		if (ad.getBd() != null) {
 			int opcion;
 			do {
@@ -42,7 +42,7 @@ public class Principal {
 		}
 	}
 	private static void crearMascota() {
-		// TODO Auto-generated method stub
+		
 		mostrarClientes();
 		System.out.println("Código de cliente:");
 		int codigo = t.nextInt();t.nextLine();
@@ -69,14 +69,14 @@ public class Principal {
 		
 	}
 	private static void mostrarClientes() {
-		// TODO Auto-generated method stub
+		
 		ArrayList<Cliente> clientes = ad.obtenerClientes();
 		for(Cliente c: clientes) {
 			c.mostrar();
 		}
 	}
 	private static void crearCliente() {
-		// TODO Auto-generated method stub
+		
 		System.out.println("Email:");
 		String email = t.nextLine();				
 		Cliente c = ad.obtenerCliente(email);

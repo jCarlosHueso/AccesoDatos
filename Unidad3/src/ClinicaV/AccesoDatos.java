@@ -46,7 +46,7 @@ public class AccesoDatos {
 			bd = cluster.getDatabase("clinicaV").withCodecRegistry(registro);
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 			System.out.println(e.getMessage());
 		}
 	}
@@ -63,12 +63,12 @@ public class AccesoDatos {
 			cluster.close();
 			
 		} catch (MongoException e) {
-			// TODO: handle exception
+			
 			System.out.println(e.getMessage());
 		}
 	}
 	public Cliente obtenerCliente(String email) {
-		// TODO Auto-generated method stub
+		
 		Cliente resultado = null;
 		try {
 			MongoCollection<Cliente> col = bd.getCollection("clientes",Cliente.class);
@@ -78,12 +78,12 @@ public class AccesoDatos {
 			resultado = col.find(filtro).first();
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 		}
 		return resultado;
 	}
 	public int obtenerCodigo(String coleccion) {
-		// TODO Auto-generated method stub
+		
 		int resultado = 0;
 		try {			
 			MongoCollection<Document> col = bd.getCollection(coleccion);
@@ -102,13 +102,13 @@ public class AccesoDatos {
 			
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 			e.printStackTrace();
 		}
 		return resultado;
 	}
 	public boolean crearCliente(Cliente c) {
-		// TODO Auto-generated method stub
+		
 		boolean resultado = false;
 		try {
 			MongoCollection<Cliente> col = bd.getCollection("clientes",Cliente.class);
@@ -119,25 +119,25 @@ public class AccesoDatos {
 			}
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 			e.printStackTrace();
 		}
 		return resultado;
 	}
 	public ArrayList<Cliente> obtenerClientes() {
-		// TODO Auto-generated method stub
+		
 		ArrayList<Cliente> resultado = new ArrayList<>();
 		try {
 			MongoCollection<Cliente> col = bd.getCollection("clientes",Cliente.class);			
 			col.find().into(resultado);
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 			e.printStackTrace();
 		}
 		return resultado;
 	}
 	public Cliente obtenerCliente(int codigo) {
-		// TODO Auto-generated method stub
+		
 		Cliente resultado = null;
 		try {
 			MongoCollection<Cliente> col = bd.getCollection("clientes",Cliente.class);
@@ -146,13 +146,13 @@ public class AccesoDatos {
 			
 			resultado = col.find(filtro).first();
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 			e.printStackTrace();
 		}
 		return resultado;
 	}
 	public boolean crearMascota(Mascota m) {
-		// TODO Auto-generated method stub
+	
 		boolean resultado = false;
 		try {
 			MongoCollection<Mascota> col = bd.getCollection("mascotas",Mascota.class);
@@ -162,7 +162,7 @@ public class AccesoDatos {
 				resultado = true;
 			}
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 			e.printStackTrace();
 		}
 		return resultado;
