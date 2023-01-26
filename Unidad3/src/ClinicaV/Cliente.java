@@ -9,10 +9,10 @@ public class Cliente {
 	}
 
 
-	public Cliente(int codigo, String nombre, String direccion) {
+	public Cliente(int codigo, String nombre, String email) {
 		this.codigo = codigo;
 		this.nombre = nombre;
-		this.email = direccion;
+		this.email = email;
 	}
 
 	public void mostrar() {
@@ -40,13 +40,13 @@ public class Cliente {
 	}
 
 
-	public String getDireccion() {
+	public String getEmail() {
 		return email;
 	}
 
 
-	public void setDireccion(String direccion) {
-		this.email = direccion;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	

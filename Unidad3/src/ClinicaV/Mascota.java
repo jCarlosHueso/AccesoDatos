@@ -16,7 +16,7 @@ public class Mascota {
 		this.tratamientos = tratamientos;
 	}
 	
-	private void mostrar(boolean mosrtarTrat) {
+	public void mostrar(boolean mosrtarTrat) {
 		System.out.println("Codigo:"+codigo + 
 				"\tCliente:"+ cliente +
 				"\tNombre:" + nombre +
