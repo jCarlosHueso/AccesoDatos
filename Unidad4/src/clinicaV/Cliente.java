@@ -1,5 +1,6 @@
 package clinicaV;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 
 import jakarta.persistence.CascadeType;
@@ -37,6 +38,13 @@ public class Cliente {
 
 	@OneToMany(cascade = CascadeType.PERSIST, mappedBy = "cliente" )
 	private ArrayList<Mascota> mascotas = new  ArrayList();
+=======
+public class Cliente {
+	private int codigo;
+	private String nombre;
+	private String email;
+	private String telefono;
+>>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 	
 	
 	public String getTelefono() {
@@ -60,16 +68,23 @@ public class Cliente {
 		this.telefono = telefono;
 	}
 
+<<<<<<< HEAD
 	public void mostrar(boolean mostrarMascotas) {
+=======
+	public void mostrar() {
+>>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		System.out.println("Codigo:"+codigo + 
 				"\tNombre:"+ nombre + 
 				"\tDireccion:" + email + 
 				"\tTeléfono:"+telefono);
+<<<<<<< HEAD
 		if(mostrarMascotas) {
 			for(Mascota m : mascotas) {
 				m.mostrar(false);
 			}
 		}
+=======
+>>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 	}
 	public int getCodigo() {
 		return codigo;

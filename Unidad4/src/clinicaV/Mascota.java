@@ -2,6 +2,7 @@ package clinicaV;
 
 import java.util.ArrayList;
 
+<<<<<<< HEAD
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -25,6 +26,13 @@ public class Mascota {
 	@Column(nullable = false)
 	private String tipo;	
 	@OneToMany(cascade = CascadeType.PERSIST, mappedBy = "idConsulta.mascota" )
+=======
+public class Mascota {
+	private int codigo;
+	private Cliente cliente;
+	private String nombre;
+	private String tipo;
+>>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 	private ArrayList<Consulta> consultas=new ArrayList();
 	
 	public Mascota() {

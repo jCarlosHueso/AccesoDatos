@@ -1,0 +1,3 @@
+1;Pérez Reverte;Arturo;2000.00
+2;Sierra;Javier;10000.00
+3;Sánchez;Clara;6500.00
