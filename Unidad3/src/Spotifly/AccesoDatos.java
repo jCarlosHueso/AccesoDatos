@@ -156,8 +156,7 @@ public class AccesoDatos {
 	}
 
 	public ArrayList<String> obtenerArtistas(String genero) {
-		// TODO Auto-generated method stub
-		// TODO Auto-generated method stub
+	
 		ArrayList<String> resultado = new ArrayList();
 		try {
 			MongoCollection<Document> col = bd.getCollection("artista");
@@ -513,7 +512,8 @@ public class AccesoDatos {
 							Accumulators.max("AñoUltimoAlbum", "$anio"),
 							Accumulators.avg("MediaValoracion", new Document("$avg","$canciones.valoracion"))  
 					),
-					Aggregates.addFields(new Field("artista","$_id"),new Field("val2",  new Document("$round","$MediaValoracion"))),
+					Aggregates.addFields(new Field("artista","$_id"),
+							new Field("val2",  new Document("$round","$MediaValoracion"))),
 					Aggregates.project(Projections.fields(
 							Projections.exclude("_id")
 							)),

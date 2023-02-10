@@ -19,6 +19,7 @@
   	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 		<dependency>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>6.1.6.Final</version>
@@ -28,6 +29,11 @@
 			<version>6.1.6.Final</version>
 			<type>pom</type>
 >>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
+=======
+			<groupId>org.hibernate.orm</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>6.1.6.Final</version>
+>>>>>>> 3b8ff0e (prueba saneamientos)
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
