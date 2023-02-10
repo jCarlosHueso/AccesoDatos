@@ -1,10 +1,8 @@
 package clinicaV;
 
-<<<<<<< HEAD
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-=======
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -14,7 +12,6 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.Query;
->>>>>>> 3b8ff0e (prueba saneamientos)
 
 public class AccesoDatos {
 	private EntityManager em = null;
@@ -47,8 +44,7 @@ public class AccesoDatos {
 	public void setEm(EntityManager em) {
 		this.em = em;
 	}
-<<<<<<< HEAD
-=======
+
 
 	public Cliente obtenerCliente(String email) {
 		// TODO Auto-generated method stub
@@ -368,8 +364,6 @@ public class AccesoDatos {
 			e.printStackTrace();
 		}
 		return resultado;
-	}
->>>>>>> 3b8ff0e (prueba saneamientos)
-	
+	}	
 	
 }
