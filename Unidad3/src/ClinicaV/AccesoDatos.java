@@ -6,13 +6,10 @@ import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-<<<<<<< HEAD
 import java.util.Date;
 import java.util.List;
 
 import javax.print.Doc;
-=======
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 
 import org.bson.Document;
 import org.bson.codecs.configuration.CodecProvider;
@@ -30,15 +27,12 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Accumulators;
 import com.mongodb.client.model.Aggregates;
 import com.mongodb.client.model.Filters;
-<<<<<<< HEAD
 import com.mongodb.client.model.Projections;
 import com.mongodb.client.model.UpdateOptions;
 import com.mongodb.client.model.Updates;
 import com.mongodb.client.result.InsertOneResult;
 import com.mongodb.client.result.UpdateResult;
-=======
 import com.mongodb.client.result.InsertOneResult;
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 
 public class AccesoDatos {
 	private MongoClient cluster = null;
@@ -83,11 +77,8 @@ public class AccesoDatos {
 		}
 	}
 	public Cliente obtenerCliente(String email) {
-<<<<<<< HEAD
 		// TODO Auto-generated method stub
-=======
 		
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		Cliente resultado = null;
 		try {
 			MongoCollection<Cliente> col = bd.getCollection("clientes",Cliente.class);
@@ -97,20 +88,14 @@ public class AccesoDatos {
 			resultado = col.find(filtro).first();
 			
 		} catch (Exception e) {
-<<<<<<< HEAD
 			// TODO: handle exception
-=======
 			
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		}
 		return resultado;
 	}
 	public int obtenerCodigo(String coleccion) {
-<<<<<<< HEAD
 		// TODO Auto-generated method stub
-=======
 		
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		int resultado = 0;
 		try {			
 			MongoCollection<Document> col = bd.getCollection(coleccion);
@@ -129,21 +114,14 @@ public class AccesoDatos {
 			
 			
 		} catch (Exception e) {
-<<<<<<< HEAD
 			// TODO: handle exception
-=======
-			
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 			e.printStackTrace();
 		}
 		return resultado;
 	}
 	public boolean crearCliente(Cliente c) {
-<<<<<<< HEAD
 		// TODO Auto-generated method stub
-=======
 		
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		boolean resultado = false;
 		try {
 			MongoCollection<Cliente> col = bd.getCollection("clientes",Cliente.class);
@@ -154,41 +132,29 @@ public class AccesoDatos {
 			}
 			
 		} catch (Exception e) {
-<<<<<<< HEAD
 			// TODO: handle exception
-=======
 			
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 			e.printStackTrace();
 		}
 		return resultado;
 	}
 	public ArrayList<Cliente> obtenerClientes() {
-<<<<<<< HEAD
 		// TODO Auto-generated method stub
-=======
 		
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		ArrayList<Cliente> resultado = new ArrayList<>();
 		try {
 			MongoCollection<Cliente> col = bd.getCollection("clientes",Cliente.class);			
 			col.find().into(resultado);
 		} catch (Exception e) {
-<<<<<<< HEAD
 			// TODO: handle exception
-=======
 			
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 			e.printStackTrace();
 		}
 		return resultado;
 	}
 	public Cliente obtenerCliente(int codigo) {
-<<<<<<< HEAD
 		// TODO Auto-generated method stub
-=======
 		
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		Cliente resultado = null;
 		try {
 			MongoCollection<Cliente> col = bd.getCollection("clientes",Cliente.class);
@@ -197,21 +163,15 @@ public class AccesoDatos {
 			
 			resultado = col.find(filtro).first();
 		} catch (Exception e) {
-<<<<<<< HEAD
 			// TODO: handle exception
-=======
 			
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 			e.printStackTrace();
 		}
 		return resultado;
 	}
 	public boolean crearMascota(Mascota m) {
-<<<<<<< HEAD
 		// TODO Auto-generated method stub
-=======
 	
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		boolean resultado = false;
 		try {
 			MongoCollection<Mascota> col = bd.getCollection("mascotas",Mascota.class);
@@ -221,7 +181,6 @@ public class AccesoDatos {
 				resultado = true;
 			}
 		} catch (Exception e) {
-<<<<<<< HEAD
 			// TODO: handle exception
 			e.printStackTrace();
 		}
@@ -428,9 +387,7 @@ public class AccesoDatos {
 			
 		} catch (Exception e) {
 			// TODO: handle exception
-=======
 			
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 			e.printStackTrace();
 		}
 		return resultado;

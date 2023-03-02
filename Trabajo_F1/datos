@@ -1,0 +1,23 @@
+persona(padre)-> codigo, nombre, edad, nacionalidad, 
+(heredan): Piloto, director
+director->iDirector
+Piloto-> dorsal, carreras ganadas, podios
+equipo->nobre, pilotos, director
+carrera->codigo, circuito, lugar, vueltas, podio(matriz)
+
+
+!
+La FIA nos ha encargado crear una base de datos para guardar los datos de esta temporada de formula1
+
+nos piden que almacenemos datos de los pilotos y los directores de cada equipo, datos del propio
+equipo y datos de cada carrera
+de los pilotos tendremos que guardar datos como un codigo unico para cada uno, el nombre, la edad
+la nacionalidad, la cantidad de podios y la cantidad de victorias además de su dorsal
+
+de los directores piden algunos datos comunes a los pilotos, como son el codigo, el nombre, la edad y la 
+nacionalidad además de un id unico aparte para los directores
+de los equipos nos piden que guardemos adtos tales como el nombre de cada equipo, los pilotos que corren
+en ese equipo y el director de ese equipo.
+Por ultimo, de las carreras nos piden que guardemos un codigo unico para cada carrera,
+el circuito de esa carrera, el lugar de la carrera (ciudad y pais), las vueltas de la carrera y el podio
+de la carrera (los 3 pilotos que han conseguido podio, guardados en euna matriz)

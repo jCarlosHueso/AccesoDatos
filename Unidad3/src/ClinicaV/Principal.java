@@ -2,10 +2,7 @@ package ClinicaV;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-<<<<<<< HEAD
 import java.util.Date;
-=======
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 import java.util.Scanner;
 
 
@@ -16,11 +13,8 @@ public class Principal {
 	// a pintar/pedir fechas
 	static SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 	public static void main(String[] args) {
-<<<<<<< HEAD
 		// TODO Auto-generated method stub
-=======
 		
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		if (ad.getBd() != null) {
 			int opcion;
 			do {
@@ -41,7 +35,6 @@ public class Principal {
 				case 2:
 					crearMascota();
 					break;
-<<<<<<< HEAD
 				case 3:
 					crearTratamiento();
 					break;
@@ -54,8 +47,6 @@ public class Principal {
 				case 6:
 					modificarTratamiento();
 					break;
-=======
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 				}
 			} while (opcion != 0);
 			//Cerrar conexión
@@ -64,7 +55,6 @@ public class Principal {
 			System.out.println("Error, no hay conexión con Clínica");
 		}
 	}
-<<<<<<< HEAD
 	private static void modificarTratamiento() {
 		// TODO Auto-generated method stub
 		mostrarTratamientos();
@@ -166,10 +156,7 @@ public class Principal {
 	}
 	private static void crearMascota() {
 		// TODO Auto-generated method stub
-=======
-	private static void crearMascota() {
 		
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		mostrarClientes();
 		System.out.println("Código de cliente:");
 		int codigo = t.nextInt();t.nextLine();
@@ -196,22 +183,16 @@ public class Principal {
 		
 	}
 	private static void mostrarClientes() {
-<<<<<<< HEAD
 		// TODO Auto-generated method stub
-=======
 		
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		ArrayList<Cliente> clientes = ad.obtenerClientes();
 		for(Cliente c: clientes) {
 			c.mostrar();
 		}
 	}
 	private static void crearCliente() {
-<<<<<<< HEAD
 		// TODO Auto-generated method stub
-=======
 		
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
 		System.out.println("Email:");
 		String email = t.nextLine();				
 		Cliente c = ad.obtenerCliente(email);
