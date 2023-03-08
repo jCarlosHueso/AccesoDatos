@@ -4345,3 +4345,4 @@ org.apache.maven.project.ProjectBuildingException: Some problems were encountere
 2023-03-03 12:42:35,799 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\usuario\Desktop\Workspace\ExamenMongolongo\src\main\resources
 2023-03-03 12:42:35,801 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-03-03 12:42:35,801 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\usuario\Desktop\Workspace\ExamenMongolongo\src\test\resources
+2023-03-08 14:16:37,250 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
