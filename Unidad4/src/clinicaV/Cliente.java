@@ -1,13 +1,8 @@
 package clinicaV;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-import java.util.ArrayList;
-=======
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
->>>>>>> 3b8ff0e (prueba saneamientos)
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -16,38 +11,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-<<<<<<< HEAD
-
-@Entity(name="cliente")
-//Atributo name es para indicar el nombre de la tabla
-//Si es el mismo se puede obviar
-public class Cliente {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	//Cliente es pk autonumérica
-	private int codigo;
-	
-	@Column(nullable = false)
-	private String nombre;
-	@Column(nullable = false, unique = true)
-	private String email;
-	@Column(nullable = false)
-	private String telefono;
-	public ArrayList<Mascota> getMascotas() {
-		return mascotas;
-	}
-
-
-	public void setMascotas(ArrayList<Mascota> mascotas) {
-		this.mascotas = mascotas;
-	}
-
-
-	@OneToMany(cascade = CascadeType.PERSIST, mappedBy = "cliente" )
-	private ArrayList<Mascota> mascotas = new  ArrayList();
-=======
-public class Cliente {
-=======
 import jakarta.persistence.Table;
 
 @Entity
@@ -58,7 +21,6 @@ public class Cliente implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	//Cliente es pk autonumérica
->>>>>>> 3b8ff0e (prueba saneamientos)
 	private int codigo;
 	
 	@Column(nullable = false)
@@ -67,9 +29,6 @@ public class Cliente implements Serializable{
 	private String email;
 	@Column(nullable = false)
 	private String telefono;
-<<<<<<< HEAD
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
-=======
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "cliente" )
 	private List<Mascota> mascotas = new  ArrayList();
 	
@@ -107,7 +66,6 @@ public class Cliente implements Serializable{
 
 
 	
->>>>>>> 3b8ff0e (prueba saneamientos)
 	
 	
 	public String getTelefono() {
@@ -124,35 +82,7 @@ public class Cliente implements Serializable{
 	}
 
 
-<<<<<<< HEAD
-	public Cliente(int codigo, String nombre, String email, String telefono) {
-		this.codigo = codigo;
-		this.nombre = nombre;
-		this.email = email;
-		this.telefono = telefono;
-	}
-
-<<<<<<< HEAD
-	public void mostrar(boolean mostrarMascotas) {
-=======
-	public void mostrar() {
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
-		System.out.println("Codigo:"+codigo + 
-				"\tNombre:"+ nombre + 
-				"\tDireccion:" + email + 
-				"\tTeléfono:"+telefono);
-<<<<<<< HEAD
-		if(mostrarMascotas) {
-			for(Mascota m : mascotas) {
-				m.mostrar(false);
-			}
-		}
-=======
->>>>>>> d7be6f3fcc409e5f3eeb7cc9918452a8311da14c
-	}
-=======
 	
->>>>>>> 3b8ff0e (prueba saneamientos)
 	public int getCodigo() {
 		return codigo;
 	}

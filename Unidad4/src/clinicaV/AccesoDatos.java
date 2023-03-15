@@ -1,8 +1,5 @@
 package clinicaV;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -44,7 +41,6 @@ public class AccesoDatos {
 	public void setEm(EntityManager em) {
 		this.em = em;
 	}
-
 
 	public Cliente obtenerCliente(String email) {
 		// TODO Auto-generated method stub
@@ -364,6 +360,7 @@ public class AccesoDatos {
 			e.printStackTrace();
 		}
 		return resultado;
-	}	
+	}
+	
 	
 }

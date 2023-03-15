@@ -1,16 +1,10 @@
 package clinicaV;
 
-<<<<<<< HEAD
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-=======
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
->>>>>>> 3b8ff0e (prueba saneamientos)
 import java.util.Scanner;
 
 
@@ -19,12 +13,8 @@ public class Principal {
 	static AccesoDatos ad = new AccesoDatos();
 	// Definimos el formato con el que vamos
 	// a pintar/pedir fechas
-<<<<<<< HEAD
-	static SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
-=======
 	static SimpleDateFormat formato = new SimpleDateFormat("ddMMyyHHmm");
 	
->>>>>>> 3b8ff0e (prueba saneamientos)
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		if (ad.getEm() != null) {
@@ -33,8 +23,6 @@ public class Principal {
 				System.out.println("Introduce opción:");
 				System.out.println("0-Salir");
 				System.out.println("1-Crear Cliente");
-<<<<<<< HEAD
-=======
 				System.out.println("2-Mostrar Clientes");
 				System.out.println("3-Modificar Cliente");
 				System.out.println("4-Borrar Cliente");
@@ -45,16 +33,10 @@ public class Principal {
 				System.out.println("9-Mostrar Rankig Buenos Clientes");
 				System.out.println("10-% Consultas no asistidas Clientes");
 				
->>>>>>> 3b8ff0e (prueba saneamientos)
 				opcion = t.nextInt();
 				t.nextLine();
 				switch (opcion) {
 				case 1:
-<<<<<<< HEAD
-					
-					break;
-				
-=======
 					crearCliente();
 					break;
 				case 2:
@@ -84,7 +66,6 @@ public class Principal {
 				case 10:
 					infoMalosClientes();
 					break;
->>>>>>> 3b8ff0e (prueba saneamientos)
 				}
 			} while (opcion != 0);
 			//Cerrar conexión
@@ -93,8 +74,6 @@ public class Principal {
 			System.out.println("Error, no hay conexión con Clínica");
 		}
 	}
-<<<<<<< HEAD
-=======
 	private static void infoMalosClientes() {
 		// TODO Auto-generated method stub
 		List<Cliente> clientes = ad.obtenerClientes();
@@ -322,6 +301,5 @@ public class Principal {
 			System.out.println("Error, cliente no existe");
 		}
 	}
->>>>>>> 3b8ff0e (prueba saneamientos)
 	
 }

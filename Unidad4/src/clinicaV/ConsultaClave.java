@@ -1,9 +1,6 @@
 package clinicaV;
 
-<<<<<<< HEAD
-=======
 import java.io.Serializable;
->>>>>>> 3b8ff0e (prueba saneamientos)
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -12,11 +9,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 
-<<<<<<< HEAD
-public class ConsultaClave {
-=======
 public class ConsultaClave  implements Serializable{
->>>>>>> 3b8ff0e (prueba saneamientos)
 	@ManyToOne
 	@JoinColumn(name="mascota", referencedColumnName = "codigo")
 	//referencedColumnName contiene el nombre del campo
